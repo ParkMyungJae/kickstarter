@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+/* CSS 초기화  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+.overlay {
+    width: 100%;
+    height: 799px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0%;
+    bottom: 0;
+    background: linear-gradient(85deg, #29bae0 -10%, #ee79ad);
+    z-index: -10000;
+    transform: skewY(3deg) translateY(-60px);
+}
+
+.activity {
+    border-bottom: 1px solid #fff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 240px;
+}
+
+.headerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 350px;
+    height: 150px;
+    margin-right: 100px;
+}
+
+header a {
+    margin: 10px;
+    padding: 12px;
+    color: #fff;
+    text-shadow: 3px 3px 24px rgba(0, 0, 0, 0.8);
+}
+/* css 초기화 끝 */
+
+/* 토스트 */
+.toast-wrapper {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    max-height: 100vh;
+    z-index: 10000;
+}
+
+.toast {
+    height: 100%;
+    background-color: #003a70;
+    margin: 20px;
+    padding: 30px;
+    position: relative;
+    color: #fff;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
+}
+
+.toast-close {
+    font-size: 36px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    cursor: pointer;
+}
+
+/* 토스트 끝 */
+
+/* visual 부분 */
+.visual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 24px rgba(0, 0, 0, 0.8);
+    padding-bottom: 30px;
+}
+
+.visual > p:nth-child(1) {
+    font-size: 60px;
+    margin: 40px;
+}
+
+.visual > p:nth-child(2) {
+    font-size: 30px;
+    margin: 30px;
+}
+
+.visual img {
+    width: 50%;
+    height: 620px;
+    margin: 50px;
+}
+/* visual 부분 끝 */
+
+/* main 부분 */
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    margin: 5px;
+    font-size: 28px;
+}
+
+.reTitle {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.addFunction {
+    width: 50%;
+    margin: 40px;
+}
+
+.input-form {
+    padding: 20px;
+    position: relative;
+}
+
+.input-form > input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+.input-form > label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+.img {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 292px;
+    outline: none;
+}
+
+.addFunction input[type="submit"] {
+    width: 80px;
+    height: 40px;
+    float: right;
+    margin: 20px;
+    background: #fff;
+    border: 1px solid #3a3a3a;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.addFunction input[type="submit"]:hover {
+    background: #0066ff;
+    border: 1px solid #0066ff;
+    color: #fff;
+}
+
+.viewer {
+    height: 100%;
+    margin: 20px;
+    padding: 0 20px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    border: 1px solid #3a3a3a;
+}
+
+.graph-wrap, .graph-wraps {
+    height: 30px;
+    margin: 20px;
+    border: 1px solid #000;
+    position: relative;
+    background-color: rgb(197, 190, 226);
+    z-index: -5;
+}
+
+.graph, .graphs {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 28px;
+    background-color: rgb(91, 73, 158);
+    z-index: -2;
+}
+
+.graph-text, .graph-texts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owner {
+    width: 100%;
+    height: 30px;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+/* main 부분 끝 */
+
+/* 페이지네이션 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid #aaa;
+}
+
+.pagination a.active {
+    border: 1px solid #4CAF50;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+/* 페이지네이션 끝 */
+
+/* footer 부분 */
+footer {
+    width: 100%;
+    height: 100%;
+    background: #29bae0;
+    color: #fff;
+}
+
+.topFooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: left;
+    padding : 10px;
+}
+
+.topFooter a{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.bottomFooter {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.bottomFooter p {
+    text-align: center;
+}
+
+#footerTitle {
+    margin: 25px;
+    padding-bottom: 50px;
+}
+
+#footerFocus {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: #3a3a3a;
+    position: absolute;
+    bottom: 0;
+}
+/* footer 부분 끝 */
